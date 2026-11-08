@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica JavaScript - Fuentes</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f6f9;
+        color: #333;
+    }
+    header {
+        background-color: #1e293b;
+        color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    section {
+        background: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    /* Estilo para centrar y poner en cursiva los títulos de los ejercicios (h3) */
+    section h3 {
+        color: #2563eb;
+        text-align: center;
+        font-style: italic;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 6px;
+    }
+    h2 {
+        color: #2563eb;
+        text-align: center;
+        font-style: italic;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 8px;
+    }
+    .box {
+        padding: 15px;
+        border: 2px dashed #56769e;
+        border-radius: 6px;
+        margin: 15px 0;
+    }
+    input, button {
+        padding: 10px;
+        margin: 5px 5px 5px 0;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid #cbd5e1;
+    }
+    button {
+        background-color: #2563eb;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #1d4ed8;
+    }
+    ul {
+        list-style-type: square;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>Práctica: JavaScript y Manipulación del DOM</h1>
+        <p>Estudiante: Fuentes</p>
+    </header>
+
+    <section>
+        <h2 style="text-align: center; font-style: italic;">Ejercicios</h2>
+
+        <!-- Ejercicio 1 -->
+        <article class="box">
+            <h3>Ejercicio 1: Doble de un número</h3>
+            <p>Ingresa un número para calcular su doble:</p>
+            <input type="number" id="input-numero" placeholder="Ej. 5">
+            <button onclick="calcularDoble()">Calcular Doble</button>
+            <p id="resultado-doble"></p>
+        </article>
+
+        <!-- Ejercicio 2 -->
+    <article class="box">
+    <h3>Ejercicio 2: Número palíndromo</h3>
+    <p>Ingresa un número para verificar si es palíndromo (ej. 121, 1331):</p>
+    <input type="text" id="input-palindromo" placeholder="Ej. 121">
+    <button onclick="verificarPalindromo()">Verificar</button>
+    <p id="resultado-palindromo"></p> <!-- ¡Importante este párrafo para ver el mensaje! -->
+    </article>
+
+        <!-- Ejercicio 3 -->
+        <article class="box">
+            <h3>Ejercicio 3: Contador automático</h3>
+            <p>Valor actual del contador: <strong id="contador-valor">0</strong></p>
+            <button id="btn-incrementar">Incrementar</button>
+        </article>
+
+        <!-- Ejercicio 4 -->
+        <article class="box">
+            <h3>Ejercicio 4: Lista de tareas</h3>
+            <input type="text" id="input-tarea" placeholder="Escribe una nueva tarea...">
+            <button onclick="agregarTarea()">Agregar Tarea</button>
+            <ul id="lista-tareas"></ul>
+        </article>
+    </section>
+
+    <!-- Enlace al script externo requerido -->
+    <script src="scripts/functions.js"></script>
+</body>
+</html>
